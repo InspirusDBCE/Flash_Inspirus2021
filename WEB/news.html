@@ -6,24 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Document</title>
+    <link href="2.css" rel="stylesheet">
+    <title>Flash-Solution</title>
 </head>
 
 <body>
-    <!-- news1 -->
-    <section class="text-gray-600 body-font">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Breaking News: Facebook renames itself Meta to emphasize its ‘metaverse’ vision
-                </h1>
-                <p class="mb-8 leading-relaxed">Facebook changed its parent company name to Meta on Thursday.There is no change in the names of the apps Facebook, Instagram or WhatsApp.The company also unveiled its new logo - a blue infinity symbol Facebook has changed its parent company
-                    name to Meta, Mark Zuckerberg announced on Thursday. Zuckerberg said that the company is rebranding itself as Meta in an effort to encompass its virtual-reality vision for the future.</p>
-            </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img class="object-cover object-center rounded" alt="hero" src="https://th.bing.com/th/id/OIF.P0yJR4vg22Ht4ZnkFyTFiA?pid=ImgDet&rs=1">
-            </div>
+    <header class="text-gray-600 body-font  header1">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="home.html">
+                <img src="logo.png" class="img_logo">
+                </img>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="upload.html" class="mr-5 hover:text-gray-900">Upload Project</a>
+                <a href="projects.html" class="mr-5 hover:text-gray-900">Explore Projects</a>
+                <a href="news.html" class="mr-5 hover:text-gray-900">News</a>
+                <a href="events.html" class="mr-5 hover:text-gray-900">Events</a>
+            </nav>
+
+
+            </button>
         </div>
-    </section>
+    </header>
+    <hr>
+
+    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"></h1>
+
+
     <!-- news2 -->
     <section class="text-gray-600 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -39,6 +48,28 @@
             </div>
         </div>
     </section>
+    <!-- footer -->
+    <hr>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+
+            <p class="text-sm text-gray-500 ">FLASH Ltd. © 2021, All Rights Reserved!
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+      <a class="text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+        </svg>
+      </a>
+      <a class="ml-3 text-gray-500">
+        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+        </svg>
+      </a>
+    </span>
+        </div>
+    </footer>
 </body>
 
 </html>

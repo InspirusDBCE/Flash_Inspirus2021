@@ -45,3 +45,60 @@
     padding-right: 50px;
     padding-left: 100px;
 }
+
+.container {
+    margin: 35px 0px;
+}
+
+input,
+textarea {
+    display: block;
+    padding: 3px;
+    margin: 13px 294px;
+    width: 22px;
+    height: 27px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#comment input,
+textarea {
+    display: block;
+    padding: 3px;
+    margin: 10px 192px;
+    width: 800px;
+    height: 35px;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#comment textarea {
+    height: 15pc;
+}
+
+#comment h1 {
+    font-size: 40px;
+    margin: 2px -90px;
+}
+
+#comment {
+    align-items: center;
+    justify-content: center;
+    margin: 48px 169px;
+}
+
+#btn {
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background: #302d2d;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+}

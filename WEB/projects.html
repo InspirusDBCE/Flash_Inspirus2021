@@ -20,7 +20,7 @@
             <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a href="upload.html" class="mr-5 hover:text-gray-900">Upload Project</a>
                 <a href="projects.html" class="mr-5 hover:text-gray-900">Explore Projects</a>
-                <a href="/" class="mr-5 hover:text-gray-900">News</a>
+                <a href="news.html" class="mr-5 hover:text-gray-900">News</a>
                 <a href="events.html" class="mr-5 hover:text-gray-900">Events</a>
             </nav>
 
@@ -47,14 +47,39 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9yrP1CZN3Ds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">How to make Smart Dustbin with Arduino </h2>
                     <p class="leading-relaxed text-base">A dustbin which automatically opens its lid when it detects movement in front of it.</p>
+                    <br>
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="buttonClick()">Like</button>
+                    <input type="text" id="inc" value="0"></input>
+
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="#comment">Comment</a> </button>
+
                 </div>
                 <div class="sm:w-1/2 mb-10 rk">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/h3cd-v_1yJs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3 ">How to make a PC Using Raspberry Pi | Mini Computer</h2>
                     <p class="leading-relaxed text-base">Make a portable mini PC using Arduino </p>
+                    <br>
+                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg " onclick="buttoClick()">Like</button>
+                    <input type="text" id="in" value="0"></input>
+
+                    <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg"><a href="#comment">Comment</a></button>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="comment">
+        <h1 class="comments">Comments Section</h1>
+        <form action="#" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <textarea name="more" id="message" cols="30" rows="10" placeholder="Any Comments.."></textarea>
+            <button id="btn" type="submit" onclick="sendMessage()">Submit</button>
+        </form>
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.2.0/firebase-analytics.js";
+        </script>
+        <script src="comment.js"></script>
     </section>
     <!-- footer -->
     <hr>
@@ -78,6 +103,24 @@
     </span>
         </div>
     </footer>
+    <script>
+        var i = 0;
+        function buttonClick() {
+            if(i!=1)
+        {
+            document.getElementById('inc').value = ++i;
+
+        }
+        }
+        var j = 0;
+        function buttoClick() {
+            if(j!=1)
+        {
+            document.getElementById('in').value = ++j;
+
+        }
+        }
+    </script>
 </body>
 
 </html>
