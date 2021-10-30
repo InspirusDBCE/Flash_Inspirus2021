@@ -1,0 +1,47 @@
+.city {
+    padding-left: 80px;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.span {
+    font-weight: bold;
+}
+
+.img_logo {
+    width: 120px;
+    height: 60px;
+}
+
+.header1 {
+    border-bottom: 2px solid blue;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background: white;
+}
+
+.space {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.rk {
+    padding-right: 50px;
+    padding-left: 100px;
+}
+
+.home_page {
+    height: 80vh;
+    width: 100%;
+}
+
+#para {
+    font-weight: bold;
+}
+
+.rk1 {
+    padding-right: 50px;
+    padding-left: 100px;
+}
